@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ciptaroso Catering | Catering Rumahan & Acara</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      line-height:1.6;
+      color:#333;
+      background:#fdfdfd;
+    }
+
+    header{
+      background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+      url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      height:100vh;
+      color:white;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:15px;
+    }
+
+    header p{
+      font-size:1.2rem;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 24px;
+      background:#ff9800;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:#e68900;
+    }
+
+    nav{
+      position:sticky;
+      top:0;
+      background:white;
+      padding:15px;
+      box-shadow:0 2px 6px rgba(0,0,0,.1);
+      z-index:1000;
+    }
+
+    nav ul{
+      display:flex;
+      justify-content:center;
+      list-style:none;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#333;
+      font-weight:bold;
+    }
+
+    section{
+      padding:70px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .section-title h2{
+      font-size:2rem;
+      color:#222;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:30px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:15px;
+    }
+
+    .menu-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:20px;
+    }
+
+    .menu-card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,.08);
+      transition:.3s;
+    }
+
+    .menu-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .menu-card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+    }
+
+    .menu-card .content{
+      padding:20px;
+    }
+
+    .menu-card h3{
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:#ff9800;
+      font-weight:bold;
+      margin-top:10px;
+    }
+
+    .service-list{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .service{
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      text-align:center;
+      box-shadow:0 4px 10px rgba(0,0,0,.08);
+    }
+
+    .contact{
+      background:#fff8e8;
+      border-radius:20px;
+      padding:40px;
+    }
+
+    .contact p{
+      margin:10px 0;
+      font-size:1.05rem;
+    }
+
+    footer{
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:2.2rem;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO / PEMBUKA -->
+  <header id="home">
+    <div>
+      <h1>Ciptaroso Caterin</h1>
+      <p>Hidangan Lezat, Bersih, dan Siap Antar untuk Acara Keluarga, Kantor, dan Spesial Anda</p>
+      <a href="https://wa.me/6285722110278" class="btn" target="_blank">Pesan Sekarang via WhatsApp</a>
+    </div>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav>
+    <ul>
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#services">Layanan</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- TENTANG KAMI -->
+  <section id="about">
+    <div class="section-title">
+      <h2>Tentang Kami</h2>
+    </div>
+
+    <div class="about">
+      <img src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=900&q=80" alt="Dapur Catering">
+
+      <div>
+        <p>
+          <strong>Ciptaroso Caterin</strong> adalah usaha catering rumahan yang menghadirkan masakan
+          berkualitas dengan bahan segar, higienis, dan cita rasa khas Indonesia.
+          Kami melayani pemesanan harian, mingguan, bulanan, hingga acara besar.
+        </p>
+        <br>
+        <p>
+          Dengan pengalaman melayani berbagai kebutuhan pelanggan, kami berkomitmen
+          memberikan pelayanan ramah, tepat waktu, dan rasa yang konsisten.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="section-title">
+      <h2>Menu Favorit</h2>
+      <p>Pilihan menu terbaik untuk keluarga, kantor, dan acara spesial Anda</p>
+    </div>
+
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80" alt="Nasi Box Ayam Bakar">
+        <div class="content">
+          <h3>Nasi Box Ayam Bakar</h3>
+          <p>Nasi putih, ayam bakar bumbu kecap, sambal, lalapan.</p>
+          <div class="price">Mulai Rp20.000</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=900&q=80" alt="Paket Nasi Liwet">
+        <div class="content">
+          <h3>Paket Nasi Liwet</h3>
+          <p>Nasi liwet gurih lengkap dengan ayam, tahu, tempe, dan sambal lalapan.</p>
+          <div class="price">Mulai Rp26.000</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=80" alt="Paket Prasmanan">
+        <div class="content">
+          <h3>Paket Prasmanan</h3>
+          <p>Menu lengkap untuk hajatan, ulang tahun, arisan, dan acara kantor.</p>
+          <div class="price">Mulai Rp45.000/porsi</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=80" alt="Snack Box">
+        <div class="content">
+          <h3>Snack Box</h3>
+          <p>Aneka kue tradisional dan modern lengkap dengan minuman.</p>
+          <div class="price">Mulai Rp17.000</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LAYANAN -->
+  <section id="services">
+    <div class="section-title">
+      <h2>Layanan Kami</h2>
+    </div>
+
+    <div class="service-list">
+      <div class="service">
+        <h3>Catering Harian</h3>
+        <p>Makan siang dan malam praktis untuk rumah dan kos.</p>
+      </div>
+
+      <div class="service">
+        <h3>Catering Kantor</h3>
+        <p>Paket makan karyawan dengan jadwal rutin.</p>
+      </div>
+
+      <div class="service">
+        <h3>Catering Acara</h3>
+        <p>Pernikahan, ulang tahun, pengajian, dan acara keluarga.</p>
+      </div>
+
+      <div class="service">
+        <h3>Pengiriman Cepat</h3>
+        <p>Area pengantaran sekitar Majalengka dan sekitarnya.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section>
+    <div class="section-title">
+      <h2>Apa Kata Pelanggan?</h2>
+    </div>
+
+    <div class="service-list">
+      <div class="service">
+        <p>"Rasanya enak dan porsinya banyak. Acara keluarga jadi lebih praktis!"</p>
+        <strong>- Ibu Sari</strong>
+      </div>
+
+      <div class="service">
+        <p>"Pengiriman tepat waktu dan makanan masih hangat saat sampai kantor."</p>
+        <strong>- PT Maju Jaya</strong>
+      </div>
+
+      <div class="service">
+        <p>"Harga terjangkau dengan kualitas restoran. Recommended!"</p>
+        <strong>- Bapak Andi</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK / INFO LEBIH LANJUT -->
+  <section id="contact">
+    <div class="section-title">
+      <h2>Info Lebih Lanjut</h2>
+    </div>
+
+    <div class="contact">
+      <p><strong>📍 Alamat:</strong> Jl. Contoh No. 10, Majalengka, Jawa Barat</p>
+      <p><strong>📞 WhatsApp:</strong> 0857-2211-0278</p>
+      <p><strong>📧 Email:</strong> arryapassha099@gmail.com</p>
+      <p><strong>🕒 Jam Operasional:</strong> Senin - Minggu, 07.00 - 20.00 WIB</p>
+      <p><strong>🚚 Area Pengiriman:</strong> Majalengka, Kadipaten, Jatiwangi, dan sekitarnya</p>
+
+      <br>
+
+      <a href="https://wa.me/6281234567890" class="btn" target="_blank">Hubungi via WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Rasaa Catering. Semua Hak Dilindungi.</p>
+  </footer>
+
+</body>
+</html>
